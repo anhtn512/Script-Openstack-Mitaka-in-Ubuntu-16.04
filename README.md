@@ -49,8 +49,8 @@ OS: Ubuntu Server 16.04 64 bit
 RAM: 4GB
 CPU: 1x2, VT supported
 NIC1: eth0: 10.10.10.0/24 (Dải mạng trong)
-NIC2: eth1: 172.16.69.0/24, (Dải mạng ngoài)
-HDD: +100GB
+NIC2: eth1: 192.168.10.0/24, (Dải mạng ngoài)
+HDD: +30GB
 ```
 
 ### Cài đặt khoải tạo trên cả hai máy
@@ -60,9 +60,8 @@ su -
 apt-get update
 apt-get -y install git 
 
-git clone https://github.com/vietstacker/OpenStack-Mitaka-Scripts.git
-mv /root/OpenStack-Mitaka-Scripts/OPS-Mitaka-LB-Ubuntu/scripts/ /root/
-rm -rf OpenStack-Mitaka-Scripts/
+git clone https://github.com/anhtn512/Script-Openstack-Mitaka-in-Ubuntu-16.04.git
+mv ./Script-Openstack-Mitaka-in-Ubuntu-16.04 ./scripts
 cd scripts/
 chmod +x *.sh
 ```
