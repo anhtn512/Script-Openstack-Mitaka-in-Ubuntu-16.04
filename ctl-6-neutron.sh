@@ -216,3 +216,9 @@ neutron agent-list
 sleep 5
 
 echocolor "Finished install NEUTRON on CONTROLLER"
+
+
+sleep 5
+echocolor "Rebooting machine ..."
+init 6
+#
