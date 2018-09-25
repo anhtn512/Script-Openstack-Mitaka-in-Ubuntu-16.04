@@ -56,7 +56,7 @@ HDD: +30GB
 ### Cài đặt khoải tạo trên cả hai máy
 - Cài đặt git từ repo và tải script về máy
 ```sh
-su -
+sudo su
 apt-get update
 apt-get -y install git 
 
