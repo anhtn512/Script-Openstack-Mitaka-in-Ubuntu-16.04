@@ -64,7 +64,7 @@ sleep 5
 mysql_server=/etc/mysql/mariadb.conf.d/50-server.cnf
 test -f $mysql_server.orig || cp $mysql_server $mysql_server.orig
 rm $mysql_server
-touch $ifaces
+touch $mysql_server
 cat << EOF >> $mysql_server
 [server]
 
