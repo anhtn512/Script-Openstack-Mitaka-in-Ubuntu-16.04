@@ -26,6 +26,9 @@ EOF
 echocolor "Create  user, endpoint for NEUTRON"
 sleep 5
 
+
+source admin-openrc
+
 openstack user create neutron --domain default --password $NEUTRON_PASS
 
 openstack role add --project service --user neutron admin
