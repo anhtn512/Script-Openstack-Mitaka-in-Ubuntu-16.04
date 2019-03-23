@@ -16,6 +16,8 @@ EOF
 
 echocolor "Create user, endpoint for NOVA"
 
+source admin-openrc
+
 openstack user create nova --domain default  --password $NOVA_PASS
 
 openstack role add --project service --user nova admin
