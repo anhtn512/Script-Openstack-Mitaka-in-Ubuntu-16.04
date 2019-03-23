@@ -17,7 +17,7 @@ sleep 20
 mongo --host $CTL_MGNT_IP ./mongo.js
 
 ## Create user, end point and assign role for Ceilometer
-
+source admin-openrc
 openstack user create  --domain default --password $CEILOMETER_PASS ceilometer
 openstack role add --project service --user ceilometer admin
 openstack service create --name ceilometer --description "Telemetry" metering
