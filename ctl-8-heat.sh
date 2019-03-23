@@ -36,6 +36,8 @@ fi
 echocolor "Create  user, endpoint for HEAT"
 sleep 5
 
+source admin-openrc
+
 endpoints=$(openstack endpoint list | grep heat) || true
 
 if [ -z "$endpoints" ]; then
