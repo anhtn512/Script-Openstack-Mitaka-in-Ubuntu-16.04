@@ -15,6 +15,9 @@ EOF
 
 echocolor "Create  user, endpoint for CINDER"
 sleep 5
+
+source admin-openrc
+
 openstack user create  --domain default --password $CINDER_PASS cinder
 openstack role add --project service --user cinder admin
 openstack service create --name cinder \
